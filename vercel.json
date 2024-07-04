@@ -4,14 +4,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "api/books.js",
+        "src": "app.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/api/books(.*)",
-        "dest": "/api/books.js"
+        "src": "/api/(.*)",
+        "dest": "/app.js"
       }
     ]
   }
