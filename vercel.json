@@ -1,18 +1,19 @@
 
 
-    
+
   {
     "version": 2,
     "builds": [
       {
-        "src": "api/my-function.js",
+        "src": "app.js",
         "use": "@vercel/node"
       }
     ],
-    "functions": {
-      "api/my-function.js": {
-        "maxDuration": 30 
+    "routes": [
+      {
+        "src": "/api/books/(.*)",
+        "dest": "/app.js"
       }
-    }
+    ]
   }
-  
+    

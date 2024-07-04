@@ -22,23 +22,3 @@
   });
 
 
-/*
-
-Esto es lo que en teoria va en vercel.json
-
-  {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/app.js"
-      }
-    ]
-  }
-    */
