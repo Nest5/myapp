@@ -1,6 +1,4 @@
 
-
-
 {
     "version": 2,
     "builds": [
@@ -13,12 +11,9 @@
       {
         "src": "/api/books/(.*)",
         "dest": "/app.js"
-      },
-      {
-        "src": "/api/books",
-        "dest": "/app.js"
       }
     ]
   }
+  
   
     
