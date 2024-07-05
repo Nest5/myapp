@@ -3,7 +3,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "app.js",
+        "src": "api/index.js",
         "use": "@vercel/node"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "src": "/api/books/(.*)",
-        "dest": "app.js"
+        "dest": "api/index.js"
       }
     ]
   }
