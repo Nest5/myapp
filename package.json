@@ -4,7 +4,7 @@
   "main": "api/index.js",
   "scripts": {
     "start": "node api/index.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon api/index.js"
   },
   "keywords": [],
   "author": "Néstor R_P",
