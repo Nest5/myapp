@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const publishedDate = document.getElementById('publishedDate');
     const pages = document.getElementById('pages');
 
-    const apiUrl = 'http://localhost:3000/api/books';
+    //const apiUrl = 'http://localhost:3000/api/books';
+
+    const apiUrl = 'https://myapp-neon-two.vercel.app/api/books';
 
     bookForm.addEventListener('submit', async (event) => {
         event.preventDefault();

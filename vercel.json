@@ -5,12 +5,20 @@
       {
         "src": "app.js",
         "use": "@vercel/node"
+      },
+      {
+        "src": "public/**/*",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
+        "src": "/",
+        "dest": "public/index.html"
+      },
+      {
         "src": "/api/books/(.*)",
-        "dest": "/app.js"
+        "dest": "/api/index.js"
       }
     ]
   }
