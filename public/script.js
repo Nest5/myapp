@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //const apiUrl = 'http://localhost:3000/api/books';
 
-    const apiUrl = 'https://myapp-neon-two.vercel.app/api/books';
+    const apiUrl = 'https://myapp-neon-two.vercel.app/api/books/';
 
     bookForm.addEventListener('submit', async (event) => {
         event.preventDefault();
