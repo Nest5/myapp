@@ -8,7 +8,7 @@
       },
       {
         "src": "public/**/*",
-        "use": "@vercel/node"
+        "use": "@vercel/static"
       }
     ],
     "routes": [
@@ -18,7 +18,7 @@
       },
       {
         "src": "/api/books/(.*)",
-        "dest": "api/index.js"
+        "dest": "/api/index.js"
       }
     ]
   }

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const bookRoutes = require('../routes/bookRoutes');
 const mongoose = require('../config');
+const path = require('path');
 
 
 const app = express();
@@ -14,14 +15,14 @@ dotenv.config({path: 'config.env'});
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/api', bookRoutes);
-app.use(express.static("../public"));
 
 
 
-app.use(express.static(path.join(_dirname, '../public')));
+
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => {
-res.sendFile(path.join(_dirname, '../public', 'index.html'));
+res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
